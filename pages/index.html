@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet" href="../src/output.css">
+    <style>
+        .about-me-content{
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+
+        @media(min-width: 768px){
+            .about-me-content{
+                padding-left: 6rem;
+                padding-right: 6rem;
+            }
+        }
+    </style>
+</head>
+<body class="flex justify-center" style="margin:0; background-color: #415A77;">
+    <div class="w-full max-w-[1440px] h-full" style="background-color: #1B263B;">
+        
+        <!--Navbar Content-->
+        <header id="home" class="w-full mx-auto" style="background-color: #0D1B2A;">
+            <nav class="flex flex-row justify-center items-center h-16 md:justify-end">
+                <ul class="flex md:gap-5 " style="color: #e0e1dd; gap: 1rem">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about-me">About Me</a>
+                    </li>
+                    <li>
+                        <a href="#experience">Experience</a>
+                    </li>
+                    <li class="md:pr-4">
+                        <a href="#contacts">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Main Content-->
+        <div class="min-h-screen h-full">
+            <div class="grid justify-center grid-flow-row md:grid-flow-col md:grid-cols-2 px-5 mt-8 gap-8" style="margin-top: 2rem; gap: 2rem;">
+                <div class="flex justify-center">
+                    <img src="../assets/HomePic.png" class="object-contain h-64 w-64 md:w-96 md:h-96" alt="Home Picture">
+                </div>
+                <div class="flex pt-8 justify-center items-center flex-col md:justify-start" style="color: #e0e1dd">
+                    <div class="text-center" style="padding-left: 1rem; padding-right: 1rem;">
+                        <h1 style="font-size: 3rem; line-height: 1.125;">
+                            Meet Steve Francis King!
+                        </h1>
+                    </div>
+                    <div class="flex" style="padding-left: 2rem; padding-right: 2rem; padding-top: 2rem; padding-bottom: 1rem;">
+                        <h1 class="text-center " style="font-size: 1.25rem; line-height: 1.75; text-wrap: balance;">
+                            An aspiring Software Engineer, Game Developer, and Application Developer third year Computer Science student of Visayas State University who is passionate in his studies, capable of providing quality works, and able to compromise to achieve results.
+                        </h1>
+                    </div>
+                    <div class="flex justify-center m-5">
+                        <a href="../resume/PADA_Resume.pdf" download="PADA_Resume.pdf">
+                            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-lg md:text-2xl px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Download Resume</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--About Me-->
+            <div id="about-me" class="flex justify-center pt-12 mb-2 text-lightest" style="font-size: 2.25rem; line-height: 2.5rem">
+                <h3 class="font-bold">About Me</h3>
+            </div>
+            <hr class="w-48 h-[1px] mx-auto my-4 border-0 rounded md:my-10" style="background-color: #e0e1dd;">
+            
+            <!--Programming Languages-->
+            <div class="flex justify-center flex-col" style="margin-top: 1.5rem; ">
+                <div class="flex justify-center text-2xl text-lightest text-center">
+                    <h3>Programming Languages</h3>
+                </div>
+                <div class="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 about-me-content py-6 gap-6 justify-around">
+                    <div class="flex flex-col justify-center align-center p-3 bg-cont-color1 rounded-xl">
+                        <div class="flex rounded-xl w-10rem h-15rem" style="max-width: 8rem;">
+                            <img src="../assets/letter-c.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2" >
+                            <h5 class="text-lightest text-lg">C</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/c-.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">C++</h5>
+                        </div>
+                    </div>
+                    <div class="flex row-start-1 flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/c-sharp.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">C#</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/java.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Java</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/python.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Python</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/sql-server.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">SQL</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/asm.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg text-center">x86 ASM</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow justify-center rounded-xl" style="max-width: 8rem;">
+                            <img src="../assets/r.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">R</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Technologies Used-->
+            <div class="flex justify-center flex-col" style="margin-top: 1rem;">
+                <div class="flex justify-center text-center text-2xl text-lightest">
+                    <h3>Technical Skills and Tech Stacks</h3>
+                </div>
+                <div class="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-5 about-me-content py-6 gap-6 justify-around">
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow rounded-xl">
+                            <img src="../assets/ubuntu.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Ubuntu</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/social.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Git</h5>
+                        </div>
+                    </div>
+                    <div class="flex row-start-1 flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/docker.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Docker</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/linux.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Linux</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/html.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">HTML</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/css-3.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">CSS</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/tailwind.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg text-center">Tailwind</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/mysql.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">MySQL</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/godot.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Godot</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Interests-->
+            <div class="flex justify-center flex-col" style="margin-top: 1.5rem; ">
+                <div class="flex justify-center text-2xl text-lightest text-center">
+                    <h3>Interests</h3>
+                </div>
+                <div class="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-5 about-me-content py-6 gap-6 justify-around">
+                    <div class="flex flex-col col-start-1 row-start-1 p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow rounded-xl">
+                            <img src="../assets/kep1er.jpg" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Kep1er</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/miku.jpg" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Vocaloid</h5>
+                        </div>
+                    </div>
+                    <div class="flex row-start-1 flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/console.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Gaming</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/podcast.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Podcast</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/math.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Math</h5>
+                        </div>
+                    </div>
+                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl">
+                            <img src="../assets/programming.png" class="object-contain">
+                        </div>
+                        <div class="flex justify-center mt-2">
+                            <h5 class="text-lightest text-lg">Coding</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Experience-->
+            <div id="experience" class="flex justify-center  pt-12 mb-2" style="font-size: 2.25rem; line-height: 2.5rem">
+                <h3 class="font-bold text-center text-lightest">Experience</h3>
+            </div>
+            <hr class="w-48 h-[1px] mx-auto my-4 border-0 rounded md:my-10" style="background-color: #e0e1dd;">
+
+            
+            <div class="flex justify-center gap-16">
+                <div class="grid justify-center grid-flow-row px-5 rounded-xl border-solid " style="gap: 0.5rem; padding: 1rem;">
+                    <div class="flex flex-col" style="margin-left: 2rem; margin-right: 2rem; gap: 0.75rem;">
+                        <div class="flex justify-center text-lightest">
+                            <h3 class="text-3xl text-center">Visayas State University</h3>
+                        </div>
+                        <div class="flex justify-center text-lightest">
+                            <h3 class="text-sm text-center italic" >2022 - present</h3>
+                        </div>
+                        <div class="flex justify-center text-lightest" style="margin-top: 1rem;">
+                            <h4 class="text-lg text-balance text-center">One of the top universities in the country, which widened my perspective and knowledge about Computer Science. The institution has also provided new opportunities in competitive programming, application dveelopment, and game development.</h4>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-content">
+                        <div class="flex justify-center text-lightest" style="margin-top: 1rem;">
+                            <h4 class="text-2xl text-balance text-center font-bold">Projects</h4>
+                        </div>
+                        <div class="grid grid-flow-row px-8 py-6 gap-6 justify-around">
+                            <div class="grid grid-flow-col grid-cols-2 gap-4 p-3 justify-center bg-cont-color1" style="justify-self: center;">
+                                <div class="flex-grow rounded-xl" style="max-width: 12rem;">
+                                    <img src="../assets/COPP.png" class="object-contain">
+                                </div>
+                                <div class="flex-grow rounded-xl" style="max-width: 12rem;">
+                                    <img src="../assets/studyverse.png" class="object-contain">
+                                </div>
+                                <div class="flex-grow rounded-xl" style="max-width: 12rem;">
+                                    <img src="../assets/Games.png" class="object-contain">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col justify-content">
+                        <div class="flex justify-center text-lightest">
+                            <h4 class="text-2xl text-balance text-center font-bold">Achievements</h4>
+                        </div>
+                        <div class="grid grid-flow-row px-4 md:px-8 pt-6 gap-2 md:gap-6 justify-around" style="padding-top: 1.5rem; padding-bottom:0.725rem">
+                            <div class="grid grid-flow-col gap-4 p-2 md:p-3 justify-center bg-cont-color1 md:max-w-[80%] text-lightest" style="justify-self: center;">
+                                <div class="flex flex-col rounded-xl" style="max-width: 12rem;">
+                                    <a href="https://www.facebook.com/share/p/VG5Ruyq8FbfYCbRs/">
+                                        <img src="../assets/PSITE_EVCO.jpg" class="object-contain">
+                                    </a>
+                                </div>
+                                <div class="flex rounded-xl" style="max-width: 12rem; ">
+                                    <a href="https://www.facebook.com/share/p/81z9c5Nubrms7xCn/">
+                                        <img src="../assets/mentorship.JPG" class="object-contain">
+                                    </a>
+                                </div>
+                                <div class="flex rounded-xl" style="max-width: 12rem; ">
+                                    <a href="https://www.facebook.com/share/p/hs1dAJyiV4JaoMtz/">
+                                        <img src="../assets/gamedev.jpg" class="object-contain">
+                                    </a>
+                                </div>
+                                <div class="flex rounded-xl" style="max-width: 12rem; ">
+                                    <a href="https://www.facebook.com/share/p/KP7U1ZTYrDPAKgEf/">
+                                        <img src="../assets/honors.jpg" class="object-contain">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                        </div>
+                        <div class="flex justify-center text-lightest">
+                            <h4 class="text-balance text-center" style="font-size: 0.75rem;">Click photos to learn more...</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Contacts-->
+            <div id="contacts" class="flex justify-center  pt-12 mb-2" style="font-size: 2.25rem; line-height: 2.5rem">
+                <h3 class="font-bold text-center text-lightest">Contacts</h3>
+            </div>
+            <hr class="w-48 h-[1px] mx-auto my-4 border-0 rounded md:my-10" style="background-color: #e0e1dd;">
+        
+            <div class="flex justify-center">
+                <div class="grid justify-center grid-cols-2 grid-rows-3 grid-flow-col px-5 text-lightest items-center" style="margin-top: 0.5rem; gap: 1rem; padding-bottom: 6rem">
+                    <div class="row-start-1 col-start-1">
+                        <a href="https://github.com/padastevefrancisking">
+                            <img src="../assets/github.png" style="height: 2.5rem; width: 2.5rem;">
+                        </a>
+                    </div>
+                    <div class="row-start-2 col-start-1">
+                        <a href="https://www.linkedin.com/in/steve-francis-king-pada-2b7432327/">
+                            <img src="../assets/linkedin.png" style="height: 2.5rem; width: 2.5rem;">
+                        </a>
+                    </div>
+                    <div class="row-start-3 col-start-1">
+                        <img src="../assets/email.png" style="height: 2.5rem; width: 2.5rem;">
+                    </div>
+                    <div class="row-start-1 col-start-2">
+                        <h6>padastevefrancisking</h6>
+                    </div>
+                    <div class="row-start-2 col-start-2">
+                        <h6>Steve Francis King Pada</h6>
+                    </div>
+                    <div class="row-start-3 col-start-2">
+                        <h6>padastevefrancisking@gmail.com</h6>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+</body>
+</html>
