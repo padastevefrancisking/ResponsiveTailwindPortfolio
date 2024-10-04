@@ -11,11 +11,26 @@
             padding-left: 2rem;
             padding-right: 2rem;
         }
+        
+        .contacts
+        {
+            padding-right: 0rem;
+        }
+
+        .nav-ul{
+            gap: 1rem;
+        }
 
         @media(min-width: 768px){
             .about-me-content{
                 padding-left: 6rem;
                 padding-right: 6rem;
+            }
+            .contacts{
+                padding-right: 2rem;
+            }
+            .nav-ul{
+                gap: 3rem;
             }
         }
     </style>
@@ -26,7 +41,7 @@
         <!--Navbar Content-->
         <header id="home" class="w-full mx-auto" style="background-color: #0D1B2A;">
             <nav class="flex flex-row justify-center items-center h-16 md:justify-end">
-                <ul class="flex md:gap-5 " style="color: #e0e1dd; gap: 1rem">
+                <ul class="flex nav-ul" style="color: #e0e1dd; gap: 1rem">
                     <li>
                         <a href="#home">Home</a>
                     </li>
@@ -36,7 +51,7 @@
                     <li>
                         <a href="#experience">Experience</a>
                     </li>
-                    <li class="md:pr-4">
+                    <li class="contacts">
                         <a href="#contacts">Contacts</a>
                     </li>
                 </ul>
@@ -154,15 +169,15 @@
                 </div>
                 <div class="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-5 about-me-content py-6 gap-6 justify-around">
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow rounded-xl">
+                        <div class="flex-grow rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/ubuntu.png" class="object-contain">
                         </div>
-                        <div class="flex justify-center mt-2">
+                        <div class="flex justify-center mt-2" >
                             <h5 class="text-lightest text-lg">Ubuntu</h5>
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/social.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -170,7 +185,7 @@
                         </div>
                     </div>
                     <div class="flex row-start-1 flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/docker.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -178,7 +193,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/linux.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -186,7 +201,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/html.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -194,15 +209,15 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/css-3.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
                             <h5 class="text-lightest text-lg">CSS</h5>
                         </div>
                     </div>
-                    <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                    <div class="flex flex-col p-3 justify-between bg-cont-color1 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem; margin-top: 1.25rem">
                             <img src="../assets/tailwind.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -210,7 +225,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/mysql.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -218,7 +233,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/godot.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -235,7 +250,7 @@
                 </div>
                 <div class="grid grid-flow-row grid-cols-3 md:grid-cols-4 lg:grid-cols-5 about-me-content py-6 gap-6 justify-around">
                     <div class="flex flex-col col-start-1 row-start-1 p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow rounded-xl">
+                        <div class="flex-grow rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/kep1er.jpg" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -243,7 +258,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/miku.jpg" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -251,7 +266,7 @@
                         </div>
                     </div>
                     <div class="flex row-start-1 flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/console.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -259,7 +274,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/podcast.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -267,7 +282,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/math.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
@@ -275,7 +290,7 @@
                         </div>
                     </div>
                     <div class="flex flex-col p-3 justify-center bg-cont-color1 rounded-xl">
-                        <div class="flex-grow-0 rounded-xl">
+                        <div class="flex-grow-0 rounded-xl" style="max-width: 8rem;">
                             <img src="../assets/programming.png" class="object-contain">
                         </div>
                         <div class="flex justify-center mt-2">
